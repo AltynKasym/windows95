@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "win95";
+  src: url("../fonts/M8pt.woff2") format("woff2");
+}
+
+.press-btn {
+  border-top: 2px solid #e2e2e2;
+  border-left: 2px solid #e2e2e2;
+  border-bottom: 2px solid rgb(71, 71, 71);
+  border-right: 2px solid rgb(71, 71, 71);
+}
+
+.press-btn-start {
+  border: 2px outset #9c9c9c;
+}
+
+.press-btn-push {
+  border: 2px inset #9c9c9c;
+}
+
+.area {
+  width: 49.5%;
+  padding: 0 10px;
+  border-bottom: 2px solid #e2e2e2;
+  border-right: 2px solid #e2e2e2;
+  border-top: 2px solid #797979;
+  border-left: 2px solid #797979;
+  // border: 2px inset #a7a7a7;
+}
+
+li {
+  list-style: none;
+}
+
+.programms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

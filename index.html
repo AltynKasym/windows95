@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/zero.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Windows 95</title>
+  </head>
+  <body>
+    <div class="labels">
+      <div class="label myComp">
+        <figure>
+          <img
+            class="label__img"
+            src="./img/icons/MyComputer.ico"
+            alt="My Computer"
+          />
+          <figcaption>Мой компьютер</figcaption>
+        </figure>
+      </div>
+      <div class="label">
+        <figure class='figure'>
+          <img
+            class="label__img"
+            src="./img/icons/Folder.ico"
+            alt="My Computer"
+          />
+          <figcaption>Online Services</figcaption>
+        </figure>
+      </div>
+      <div class="label">
+        <figure class='figure'>
+          <img
+            class="label__img"
+            src="./img/icons/Recycle.ico"
+            alt="My Computer"
+          /> 
+          <figcaption>Recycle Bin</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- "Пуск" и строка  -->
+    <footer class="footer-line">
+      <div class="footer">
+        <div class="footer__start press-btn-start">Пуск</div>
+        <div class="footer__clock">
+          <img class="footer__network" src="./img/icons/Network.ico" />
+          <img class="footer__volume" src="./img/icons/Volume.ico" />
+          <span id="clock"></span>
+        </div>
+      </div>
+      <!-- Окно "Мой компьютер" -->
+      <div class="myComp-window window">
+        <!-- <div class="move"> -->
+          <div class="window__header">
+            <div class="move">
+              <h2 class="window__header-title">Мой компьютер</h2>
+            </div>
+            <div class="window__buttons">
+              <div class="window__btn window__tray press-btn">–</div>
+              <div class="window__btn window__min-max press-btn">&#x25fb</div>
+              <div class="window__btn window__close press-btn">&times</div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div >
+          <ul class="window__header-function">
+            <li class="window__header-function-text function__btn"><span class="underline">Ф</span>айл</li>
+            <li class="window__header-function-text function__btn"><span class="underline">П</span>равка</li>
+            <li class="window__header-function-text function__btn"><span class="underline">В</span>ид</li>
+            <li class="window__header-function-text function__btn"><span class="underline">П</span>омощь</li>
+          </ul>
+        </div>
+        <div class="window__main">
+          <li class="header-function-text">
+            <div class="label">
+              <figure>
+                <img
+                  class="label__img"
+                  src="./img/icons/Diskette.ico"
+                  alt="My Computer"
+                />
+                <figcaption>Диск 3.5(A)</figcaption>
+              </figure>
+            </div></li>
+          <li class="header-function-text"> <div class="label">
+            <figure>
+              <img
+                class="label__img"
+                src="./img/icons/Drive.ico"
+                alt="My Computer"
+              />
+              <figcaption>Win95 (C:)</figcaption>
+            </figure>
+          </div></li>
+          
+          <li class="header-function-text"><div class="label">
+            <figure>
+              <img
+                class="label__img"
+                src="./img/icons/DiscDrive.ico"
+                alt="My Computer"
+              />
+              <figcaption>New (D:)</figcaption>
+            </figure>
+          </div></li>
+
+          <li class="header-function-text"><div class="label">
+            <figure>
+              <img
+                class="label__img"
+                src="./img/icons/ControlPanel.ico"
+                alt="My Computer"
+              />
+              <figcaption>Панель управления</figcaption>
+            </figure>
+          </div></li>
+
+          <li class="header-function-text"><div class="label">
+            <figure>
+              <img
+                class="label__img"
+                src="./img/icons/Printers.ico"
+                alt="My Computer"
+              />
+              <figcaption>Принтеры</figcaption>
+            </figure>
+          </div></li>
+
+
+        </div>
+        <div class="window__footer">
+          <div class="area">6 объектов</div>
+          <div class="area"></div>
+        </div>
+      </div>
+
+      <!-- Окно Пуск -->
+      <div class="window window__start">
+        <div class="window95">
+          <p>Windows<span>95</span> </p> 
+        </div>
+        <div class="programms">
+          <ul>
+            <li class = 'window__start-programms window__start-items'>Программы</li>
+            <li class = 'window__start-document window__start-items'>Документы</li>
+            <li class = 'window__start-settings window__start-items'>Настройка</li>
+            <li class = 'window__start-find window__start-items'>Найти</li>
+            <li class = 'window__start-help window__start-items'>Справка</li>
+            <li class = 'window__start-run window__start-items'>Выполнить</li>
+            <li class = 'window__start-shutDown window__start-items'>Завершение работы</li>
+         </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

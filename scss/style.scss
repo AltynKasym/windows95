@@ -1,0 +1,155 @@
+@import "var";
+@import "window";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Microsoft Sans Serif";
+  // font-weight: 800;
+  letter-spacing: 0.2px;
+  background-color: #008081;
+  color: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.label {
+  cursor: default;
+  width: 100px;
+  &__img {
+    margin: auto;
+  }
+  &:focus {
+    background-color: blue;
+  }
+}
+
+.labels {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 70px 70px 70px;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+}
+
+figcaption {
+  margin-top: 5px;
+  text-align: center;
+  // &:active {
+  //   border: #ffffff dashed 0.5px;
+  // }
+}
+
+.footer {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  background-color: #cbcbcb;
+  height: 27px;
+
+  &__line {
+    margin: auto 0;
+  }
+
+  &__start {
+    margin: auto 0;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 600;
+    width: 70px;
+    height: 23px;
+
+    color: #000;
+    cursor: default;
+
+    &::before {
+      margin-bottom: -6px;
+      margin-right: 3px;
+      padding: 0;
+      background-image: url("../img/icons/Windows.ico");
+      background-position: center center;
+      background-size: 25px 20px;
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      content: "";
+    }
+  }
+
+  &__clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-right: 5px;
+    padding-right: 10px;
+    width: 100px;
+    height: 23px;
+    border: 2px inset #9c9c9c;
+
+    cursor: default;
+  }
+
+  &__volume {
+    // padding-left: 5px;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+  }
+
+  &__network {
+    padding-left: 3px;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+  }
+}
+
+#clock {
+  font-size: 12px;
+  color: #000;
+}
+.footer-line {
+  position: absolute;
+  top: 95.9vh;
+  width: 100%;
+  border-top: 1px solid #cbcbcb;
+}
+
+.myComp-window {
+  display: none;
+  background-color: #cbcbcb;
+  border: 2px outset #9c9c9c;
+}
+
+.myComp-window-vis {
+  display: block;
+  position: absolute;
+  top: -500px;
+  left: 400px;
+  width: 350px;
+  height: 250px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.function__btn:hover {
+  outline: 1px outset #e2e2e2;
+}

@@ -1,0 +1,190 @@
+.window {
+  border: 2px outset #ffffff;
+  color: #000;
+  background-color: #c0c0c0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000080;
+    margin: 3px;
+    // background-color: #c0c0c0;
+  }
+  &__header-title {
+    margin: 2px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+
+    &::before {
+      margin-bottom: -2px;
+      margin-right: 3px;
+      padding: 0;
+      background-image: url("../img/icons/MyComputer.ico");
+      background-position: center center;
+      background-size: 16px 13px;
+      display: inline-block;
+      width: 16px;
+      height: 13px;
+      content: "";
+    }
+  }
+
+  &__header-function {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+
+    &-text {
+      margin-left: 5px;
+      padding: 0 5px;
+      font-size: 12px;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 98.5%;
+    padding: 10px;
+    background-color: #fff;
+    margin: 3px;
+    border-bottom: 2px solid #e2e2e2;
+    border-right: 2px solid #e2e2e2;
+    border-top: 2px solid rgb(71, 71, 71);
+    border-left: 2px solid rgb(71, 71, 71);
+
+    li {
+      list-style: none;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+  }
+
+  &__buttons {
+    display: flex;
+    padding-right: 2px;
+    // flex-direction: column;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    font-size: 18px;
+    line-height: 70%;
+    text-align: center;
+    align-items: center;
+    color: #000;
+    background-color: #bfbfbf;
+  }
+
+  &__btn + &__btn {
+    margin-left: 1px;
+  }
+
+  &__min-max {
+    // padding-top: 1px;
+    // padding-right: 2px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__tray {
+    font-weight: 600;
+    padding-top: 4px;
+  }
+
+  &__close {
+    z-index: 9999;
+  }
+
+  &__start {
+    position: absolute;
+    top: -243px;
+    left: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 100px;
+    width: 15%;
+
+    &-items {
+      padding: 4px;
+      font-size: 14x;
+      color: #000;
+
+      &:hover {
+        color: #fff;
+        background-color: #010080;
+      }
+    }
+
+    &-items::before {
+      margin-bottom: -9px;
+      margin-right: 3px;
+      display: inline-block;
+      background-position: center center;
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+      content: "";
+    }
+
+    &-items:nth-child(1):before {
+      background-image: url("../img/icons/ProgramFolder.ico");
+      // content: "";
+    }
+    &-items:nth-child(2):before {
+      background-image: url("../img/icons/Documents_Folder.ico");
+      // content: "";
+    }
+    &-items:nth-child(3):before {
+      background-image: url("../img/icons/Settings.ico");
+      // content: "";
+    }
+    &-items:nth-child(4):before {
+      background-image: url("../img/icons/Search.ico");
+      // content: "";
+    }
+    &-items:nth-child(5):before {
+      background: url("../img/icons/HelpBook.ico");
+      // content: "";
+      margin-left: 5px;
+      margin-right: 5px;
+      // padding: 5px;
+      background-size: 22px 26px;
+      width: 22px;
+      height: 26px;
+    }
+  }
+}
+.window95 {
+  // position: relative;
+
+  width: 27px;
+  height: 240px;
+  background-color: #817f82;
+
+  p {
+    // display: inline-block;
+    margin: 0;
+    padding-left: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+
+    transform: translate(0px, 180px) rotate(-90deg);
+
+    span {
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+}
