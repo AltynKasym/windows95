@@ -81,3 +81,9 @@ document
       .querySelector(".press-btn-start")
       .classList.toggle("press-btn-push");
   });
+
+document.querySelector(".footer__start").addEventListener("click", function () {
+  document
+    .querySelector(".window__start")
+    .classList.toggle("window__start-hidden");
+});

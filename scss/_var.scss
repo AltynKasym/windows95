@@ -32,9 +32,16 @@ li {
   list-style: none;
 }
 
-.programms {
+.programms li {
   display: flex;
-  flex-direction: column;
+  height: 35px;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 }
+
+// .programms {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+// }

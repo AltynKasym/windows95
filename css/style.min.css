@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "win95";
   src: url("../fonts/M8pt.woff2") format("woff2");
@@ -30,20 +31,14 @@ li {
   list-style: none;
 }
 
-.programms {
+.programms li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .window {
@@ -165,7 +160,7 @@ li {
 }
 .window__start {
   position: absolute;
-  top: -243px;
+  top: -248px;
   left: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,10 +169,12 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-flex: 100px;
-      -ms-flex-positive: 100px;
-          flex-grow: 100px;
-  width: 200px;
+  display: none;
+}
+.window__start-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .window__start-items {
   padding: 4px;
@@ -189,13 +186,13 @@ li {
   background-color: #010080;
 }
 .window__start-items::before {
-  margin-bottom: -9px;
-  margin-right: 3px;
   display: inline-block;
   background-position: center center;
   background-size: 30px 30px;
   width: 30px;
   height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
   content: "";
 }
 .window__start-items:nth-child(1):before {
@@ -212,11 +209,33 @@ li {
 }
 .window__start-items:nth-child(5):before {
   background: url("../img/icons/HelpBook.ico");
-  margin-left: 5px;
-  margin-right: 5px;
-  background-size: 22px 26px;
-  width: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-size: 24px 26px;
+  width: 24px;
   height: 26px;
+}
+.window__start-items:nth-child(6):before {
+  background-image: url("../img/icons/ProgramWait.ico");
+}
+.window__start-items:nth-child(7):before {
+  background-image: url("../img/icons/TurnOff.ico");
+  margin-left: 7px;
+  margin-right: 7px;
+  background-size: 25px 23px;
+  width: 25px;
+  height: 23px;
+}
+.window__start-items:nth-child(7) {
+  border-top: 2px outset #e2e2e2;
+}
+.window__start-items:nth-child(1):after, .window__start-items:nth-child(2):after, .window__start-items:nth-child(3):after {
+  content: "►";
+  position: absolute;
+  margin-left: 140px;
+  -webkit-transform: scale(0.7, 1);
+      -ms-transform: scale(0.7, 1);
+          transform: scale(0.7, 1);
 }
 
 .window95 {
@@ -227,16 +246,17 @@ li {
 .window95 p {
   margin: 0;
   padding-left: 0px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: #fff;
-  -webkit-transform: translate(0px, 180px) rotate(-90deg);
-      -ms-transform: translate(0px, 180px) rotate(-90deg);
-          transform: translate(0px, 180px) rotate(-90deg);
+  color: #c0c0c0;
+  -webkit-transform: translate(0px, 195px) rotate(-90deg);
+      -ms-transform: translate(0px, 195px) rotate(-90deg);
+          transform: translate(0px, 195px) rotate(-90deg);
 }
 .window95 p span {
   font-weight: 400;
   font-size: 20px;
+  color: #fff;
 }
 
 *,
