@@ -62,8 +62,14 @@ figcaption {
   background-color: #cbcbcb;
   height: 27px;
 
-  &__line {
-    margin: auto 0;
+  &-line {
+    // position: absolute;
+    // bottom: 100;
+    // margin: auto 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #cbcbcb;
   }
 
   &__start {
@@ -123,12 +129,6 @@ figcaption {
 #clock {
   font-size: 12px;
   color: #000;
-}
-.footer-line {
-  position: absolute;
-  top: 95.9vh;
-  width: 100%;
-  border-top: 1px solid #cbcbcb;
 }
 
 .myComp-window {
