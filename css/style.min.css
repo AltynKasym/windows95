@@ -300,7 +300,7 @@ a {
   padding: 10px;
   display: grid;
   grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px;
   grid-auto-flow: column;
   grid-gap: 5px;
 }
