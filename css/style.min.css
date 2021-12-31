@@ -393,7 +393,7 @@ figcaption {
 .myComp-window-vis {
   display: block;
   position: absolute;
-  top: -80vh;
+  top: 20vh;
   left: 20%;
   width: 350px;
   height: 250px;
@@ -405,4 +405,15 @@ figcaption {
 
 .function__btn:hover {
   outline: 1px outset #e2e2e2;
+}
+
+@media screen and (max-width: 500px) {
+  .myComp-window-vis {
+    display: block;
+    position: absolute;
+    top: 20vh;
+    left: 20%;
+    width: 335px;
+    height: 250px;
+  }
 }
